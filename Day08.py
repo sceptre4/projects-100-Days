@@ -33,4 +33,4 @@ elif job == "No" and age < 50:
 elif job == "No":
     print("Well, keep trying.")
 else:
-    Print("Well, do what pleases you.")
+    print("Well, do what pleases you.")
