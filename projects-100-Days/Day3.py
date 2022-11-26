@@ -1,8 +1,0 @@
-food = input('What is your food?')
-plant = input('plant?')
-cooking = input("cooking?")
-burnedFood = input("What do you call buned food?")
-diy = input("a tool?")
-print()
-print("MENU")
-print(cooking,food,"with",burnedFood,plant,"on a bed of",diy,".")
