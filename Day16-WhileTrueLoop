@@ -1,6 +1,6 @@
 
 count = 1
-answer = True
+
 while True:
     print("Never going to ______ you up.")
     answer = input("What's the missing word?")
@@ -10,7 +10,7 @@ while True:
         break
     else:
         print("Nope, try again.")
-    count += 1
+        count += 1
 
 
 '''   
