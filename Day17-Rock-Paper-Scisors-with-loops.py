@@ -2,6 +2,8 @@ from getpass import getpass as input
 round = 1
 player1Score = 0
 player2Score = 0
+winningScore=int(input("What number of wins, will win the game?"))
+print("The first past ",winningScore," wins the game.")
 while True:
     print("It's Round ", round, ".")
     print("Select your move (R, P, or S)")
@@ -10,19 +12,41 @@ while True:
 
     if input1 == "R":
         if input2 == "R":
-            print("Tie, Both players chose Rocks.")
+            print("Tie, Both players chose Rocks in Round ",round,".")
+            round+=1
+            continue
         elif input2 == "S":
-            print("Player 1 wins, their Rock beat Scisssors.")
+            print("Player 1 wins Round ",round,"." Their Rock beat Scissors.")
+            round+=1
+            player1Score+=1
+            if player1Score>winningScore:
+                print("Player 1 Wins the Tounament")
+                break
+            else:
+                print("The score is, Player1:",player1Score," to Player2:",player2Score,".")
+                continue
         elif input2 == "P":
-            print("Player 2 wins, their Paper beat Rocks.")
+            print("Player 2 wins round",round,",their Paper beat Rocks.")
+            round+=1
+            player2Score+=1
+            if player2Score>winningScore:
+                print("Player 2 Wins the Tournament")
+                break
+            else:
+                print("The score is: ",player1Score," : ",player2Score,".")
+                continue
         else:
-            print("Player 2 must enter a R or S or a P.")
+            print("Player 2 must enter a R or S or a P.")     
+            continue
 
     elif input1 == "P":
         if input2 == "P":
-            print("Tie, Both player chose Paper.")
+            print("Tie, Both players chose Paper in Round ",round,".")
+            round+=1
+            continue
         elif input2 == "S":
             print("Player 2 wins, their Scisssors beats Paper.")
+
         elif input2 == "R":
             print("Player 1 wins, their Paper beats Rocks.")
         else:
