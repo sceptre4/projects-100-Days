@@ -12,9 +12,9 @@ attempt = 0
 while True:
     guess = input("Between 1 and a Million  ")
     guess = int(float(guess))
-    print(guess)
-    print()
     
+   
+
     if guess < 0:
         print("you're done")
         quit()
