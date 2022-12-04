@@ -1,8 +1,17 @@
-
+# generate random integer values
+from random import seed
+from random import randint
+# seed random number generator
+seed()
+# generate some integers
+for _ in range(10):
+	#value = randint(0, 10)
+    randNumber=randint(1,4)
+print(randNumber)
 
 
 attempt = 0
-print(randNumber)
+
 
 
 
@@ -34,4 +43,3 @@ while True:
         print()
         break
 print("the number was guessed in", attempt, "tries.")
-randNumber=""
