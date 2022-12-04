@@ -10,5 +10,6 @@ for i in range(10):
     
     
     print("Year",i+1,"is",loan)
+print()    
 print("You paid $",totalInterest," in interest!")
 
