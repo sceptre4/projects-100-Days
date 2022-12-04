@@ -1,12 +1,15 @@
 
 loan=1000
-int=0
+interest=0
+apr=0.05
 totalInterest=0
 for i in range(10):
-    int=(loan*.05)
-    int=round(int,2)
-    loan+=int
-    totalInterest+=int
+    loan+=(loan*apr)
+    interest+=loan*apr
+    totalInterest+=interest
+    
+
+    
     
     
     print("Year",i+1,"is",loan)
