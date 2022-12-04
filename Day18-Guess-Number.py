@@ -1,12 +1,5 @@
-# generate random integer values
-from random import seed
-from random import randint
-# seed random number generator
-seed()
-# generate some integers
-for _ in range(10):
-	#value = randint(0, 10)
-    randNumber=randint(1,4)
+import random
+randNumber=random.randint(1,1000000)
 print(randNumber)
 
 
