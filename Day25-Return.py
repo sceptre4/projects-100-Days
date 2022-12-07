@@ -10,13 +10,16 @@ myPin=pinpicker(9)
 print(myPin)
 '''
 import random
-roll=""
+outcome=""
 highSide=int(input("Pick how many sides"))
 
-def firstDice("1",outcome):
+def firstDice(number):
+    print("number sides =",highSide)
 
-   print(firstDice)
+   
 
-outcome=firstDice("1",random.randint(1,highSide))
-
-print(outcome)
+    
+    
+    print("The random dice roll, on a",highSide,"sided dice is",outcome,".")
+outcome=random.randint(1,highSide)
+firstDice(outcome)
