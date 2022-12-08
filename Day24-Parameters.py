@@ -40,8 +40,8 @@ def dice(diceSides):
         else:
             continue
 
+'''
 
-    
 diceSides=int(input("How Many Sided dice shall be rolled?")) 
 dice(diceSides)
 
@@ -62,14 +62,14 @@ while playGame == "yes":
     '''
 
 
-    '''
+    
     This subroutine creates a random pin number for us. This subroutine (called `pinPicker`) has the parameter called `number` (how many numbers I want to have in this pin). Then, there is a string (called `pin`) that is empty and a `for` loop that is used to create a defined amount of random numbers. The variable `number` controls how many times the loop will add the new number to the pin. This is done through `+=` and concatenating new values. We will cast the random number as a string so it can be concatenated together. 
 
 Then...the magic...we `return` the pin.
 
 👉 Let's see what happens:
 
-```python
+python
 #subroutine has parameter called `number`
 #`number` shows how many numbers we want the pin to have
 def pinPicker(number):
@@ -94,4 +94,3 @@ With `print` of course!
 
 ```python
 myPin = pinPicker(4)
-'''
