@@ -17,19 +17,23 @@ def type():
 
     # char()
 
+def diceRoll(roll):
+    import random
+    random.randint(1,roll )
+    return roll
 
 def health():
-    import random
-    d6 = random.randint(1, 6)
-    d12 = random.randint(1, 12)
+    
+    d6 = diceRoll(6)
+    d12 = diceRoll(12)
     health = (((d6*d12)/2)+10)
     return health
 
 
 def strength():
-    import random
-    d6 = random.randint(1, 6)
-    d12 = random.randint(1, 12)
+    
+    d6 = diceRoll(6)
+    d12 = diceRoll(12)
     strength = (((d6*d12)/2)+12)
     return strength
 
