@@ -4,12 +4,12 @@ import random
 
 
 def type1():
-    char = input("1 What type is it? ")
+    char = input("1 What type is it?\n ")
     # print(names,"the",char)
     return char
 
 def type2():
-    char = input("2 What type is it? ")
+    char = input("2 What type is it?\n ")
     # print(names,"the",char)
     return char
 
@@ -106,7 +106,7 @@ while outHealth1>=0 and outHealth2>=0:
     print(names2,"the",char2,"scored:" ,charTwoScore,)
     pause=input("")
 
-    
+
     print("1 Health:",outHealth1)
     print("2 Health:",outHealth2)
 
